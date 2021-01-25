@@ -8,8 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "tsc -p ./tsconfig-gatsby.json && gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
@@ -17,7 +16,10 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@types/styled-components": "^5.1.7",
     "babel-plugin-styled-components": "^1.12.0",
+    "eslint": "^7.18.0",
+    "eslint-config-react-native-wcandillon": "^3.3.6",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.10.0",
     "gatsby-plugin-google-analytics": "^2.10.0",
@@ -26,6 +28,7 @@
     "gatsby-plugin-sharp": "^2.13.1",
     "gatsby-plugin-sitemap": "^2.11.0",
     "gatsby-plugin-styled-components": "^3.9.0",
+    "gatsby-plugin-typescript": "^2.11.0",
     "gatsby-source-filesystem": "^2.10.0",
     "gatsby-transformer-sharp": "^2.11.0",
     "react": "^16.13.1",

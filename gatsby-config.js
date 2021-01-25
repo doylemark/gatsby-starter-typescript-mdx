@@ -4,17 +4,18 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-styled-components",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "",
-      },
-    },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
+    "gatsby-plugin-typescript",
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-137142474-2",
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -26,8 +27,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: "posts",
+        path: `${__dirname}/content/posts/`,
       },
       __key: "pages",
     },
